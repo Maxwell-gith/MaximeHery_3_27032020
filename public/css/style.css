@@ -7,7 +7,7 @@ h2 {
   font-size: 16px;
 }
 
-body {
+* {
   font-family: "Roboto", sans-serif;
   box-sizing: border-box;
   margin: 0;
@@ -26,6 +26,11 @@ ul {
 a {
   text-decoration: none;
   color: black;
+}
+
+.mainheader {
+  height: 63px;
+  padding: 20 0 0 10;
 }
 
 /*# sourceMappingURL=style.css.map */

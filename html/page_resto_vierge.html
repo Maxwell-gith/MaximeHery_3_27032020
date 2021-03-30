@@ -1,9 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/25cbbca222.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Shrikhand&display=swap" rel="stylesheet">
+    <link href="../public\css/style.css" rel="stylesheet">
     <title>nom du restaurant</title>
 </head>
 
@@ -15,11 +19,11 @@
 
 <body>
     <main>
-<!--=========================== HEADER ===========================-->    
-        <header class="header" id="acceuil">
+<!--============ HEADER ============-->    
+        <header class="header" id="home">
+            <a href="../index.html"><i class="fas fa-arrow-left"></i></a>
             <div class="header__logo">
-                <a href=""><img></a>               
-                <a href="#acceuil"><img src="images/logo/ohmyfood.png" alt="Logo OhMyFood"></a>   
+                <a href="#home"><h1>ohmyfood</h1></a>   
             </div>
         </header>
 
@@ -34,25 +38,25 @@
             </div>
         </header>
 
-<!--=========================== ENTREES ===========================-->
-        <section class="entrees">
-            <header class="entrees__header">
+<!--============ ENTREES ============-->
+        <section class="dishes" id="entrees">
+            <header class="dishes__header">
                 <h2></h2>
             </header>
 
-            <div class="entrees__tuile">
+            <div class="dishes__card">
                 <h3></h3>
                 <p></p>
                 <p></p>
             </div>
 
-            <div class="entrees__tuile">
+            <div class="dishes__card">
                 <h3></h3>
                 <p></p>
                 <p></p>
             </div>
 
-            <div class="entrees__tuile">
+            <div class="dishes__card">
                 <h3></h3>
                 <p></p>
                 <p></p>
@@ -60,25 +64,25 @@
 
         </section>
 
-<!--=========================== PLATS ===========================-->
-        <section class="plats">
-            <header class="plats__header">
+<!--============ PLATS ============-->
+        <section class="dishes" id="plats">
+            <header class="dishes__header">
                 <h2></h2>
             </header>
 
-            <div class="plats__tuile">
+            <div class="dishes__card">
                 <h3></h3>
                 <p></p>
                 <p></p>
             </div>
 
-            <div class="plats__tuile">
+            <div class="dishes__card">
                 <h3></h3>
                 <p></p>
                 <p></p>
             </div>
 
-            <div class="plats__tuile">
+            <div class="dishes__card">
                 <h3></h3>
                 <p></p>
                 <p></p>
@@ -86,25 +90,25 @@
             
         </section>
 
-<!--=========================== DESSERT ===========================-->
-        <section class="dessert">
-            <header class="dessert__header">
+<!--============ DESSERT ============-->
+        <section class="dishes" id="desset">
+            <header class="dishes__header">
                 <h2></h2>
             </header>
 
-            <div class="dessert__tuile">
+            <div class="dishes__card">
                 <h3></h3>
                 <p></p>
                 <p></p>
             </div>
 
-            <div class="dessert__tuile">
+            <div class="dishes__card">
                 <h3></h3>
                 <p></p>
                 <p></p>
             </div>
 
-            <div class="dessert__tuile">
+            <div class="dishes__card">
                 <h3></h3>
                 <p></p>
                 <p></p>
@@ -114,16 +118,31 @@
 
         <input class="commander__button" type="button" value="Commander"></input>
 
-<!--=========================== FOOTER ===========================-->
+<!--============ FOOTER ============-->
         <footer>
             <ul>
-                <li><img></li>
-                <li><img></li>
-                <li><img></li>
-                <li></li>
-                <li></li>
+                <li>
+                    <a href="#home"><h3 class="footer__logo">ohmyfood</h3></a>
+                </li>
+
+                <li>
+                    <a href=""><i class="fas fa-utensils"></i>Proposer un restaurant</a>
+                </li>
+
+                <li>
+                    <a href=""><i class="fas fa-hands-helping"></i>Devenir partenaire</a>
+                </li>
+
+                <li>
+                    <a href="">Mentions légales</a>
+                </li>
+
+                <li>
+                    <a href="">Contact</a>
+                </li>
             </ul>
         </footer>
+
     </main>
     
 </body>
