@@ -1,10 +1,10 @@
 h1 {
-  font-family: "Shrikhand", cursive;
-  font-size: 22px;
+  font-family: "Shrikhand", sans-serif;
+  font-size: 30px;
 }
 
 h2 {
-  font-size: 16px;
+  font-size: 24px;
 }
 
 * {
@@ -28,9 +28,90 @@ a {
   color: black;
 }
 
+.btn {
+  display: block;
+  width: max-content;
+  margin: auto;
+  background-image: linear-gradient(#FF79DA, #9356DC);
+  color: white;
+  border-radius: 30px;
+  box-shadow: 2px 2px 5px #c4c3c0;
+  padding: 15px 20px;
+}
+
 .mainheader {
   height: 63px;
-  padding: 20 0 0 10;
+  padding: 20px 0px 10px 0px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.localisation {
+  background-color: #eaeaea;
+  text-align: center;
+  padding: 15px 0 15px 0;
+  font-weight: 700;
+  box-shadow: inset 0px 2px 5px 0px #c4c3c0;
+}
+.localisation__icon {
+  margin-right: 15px;
+}
+
+.explorer {
+  padding: 40px 30px 55px 30px;
+  background-color: #f6f6f6;
+  text-align: center;
+}
+.explorer__title {
+  margin-bottom: 20px;
+  font-weight: bolder;
+}
+.explorer__parag {
+  margin-bottom: 30px;
+}
+
+.tuto {
+  padding: 55px 20px 45px 20px;
+}
+.tuto__title {
+  margin-bottom: 30px;
+}
+.tuto__card {
+  background-color: #f6f6f6;
+  box-shadow: 2px 2px 5px #c4c3c0;
+  border-radius: 10px 10px 10px 10px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  list-style: outside number;
+}
+.tuto__card__icon {
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+.restaurants {
+  padding: 55px 20px 45px 20px;
+  background-color: #f6f6f6;
+}
+.restaurants__title {
+  margin-bottom: 30px;
+}
+.restaurants__card {
+  height: 250px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px #c4c3c0;
+}
+.restaurants__card__img {
+  display: block;
+  height: 175px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
 }
 
 /*# sourceMappingURL=style.css.map */

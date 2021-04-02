@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/25cbbca222.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Shrikhand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Shrikhand&display=swap" rel="stylesheet"> 
     <link href="public\css/style.css" rel="stylesheet">
     <title>Oh My Food</title>
 </head>
@@ -22,67 +22,62 @@
     <main>
 <!--============ HEADER ============-->    
         <header class="mainheader" id="home">
-            <div class="mainheader__logo">
-                <a href="#home"><h1>ohmyfood</h1></a>   
-            </div>
+            <a href="#home">
+                <h1 class="mainheader__logo">ohmyfood</h1>
+            </a>   
             
         </header>
 
 <!--============ LOCALISATION ============-->
         <section class="localisation">
-            <i class="fas fa-map-marker-alt"></i>
-            <span>Paris, belleville</span>
+            <i class="fas fa-map-marker-alt localisation__icon"></i>
+            <span class="localisation__text">Paris, belleville</span>
 
         </section>
 
 <!--============ EXPLORER ============-->
         <section class="explorer">
-            <header class="explorer__header">
-                <h2>Réservez le menu qui vous convient</h2>
-            </header>
+            <h2 class="explorer__title">Réservez le menu qui <br> vous convient</h2>
 
             <p class="explorer__parag">
                 Découvrez des restaurants d'exception, sélectionnés par nos soins
             </p>
 
-            <input class="explorer__button" type="button" value="Explorer nos restaurants"></input>
+            <a  class="btn" href="">Explorer nos restaurants</a>
 
         </section>
 
 <!--============ TUTO ============-->
         <section class="tuto">
-            <header class="tuto__header">
-                <h2>Fonctionnement</h2>
-            </header>
 
-            <div class="tuto__card">
-                <span>1</span>
-                <i class="fas fa-mobile-alt"></i>
-                <span>Choisissez un restaurant</span>
-            </div>
-
-            <div class="tuto__card">
-                <span>2</span>
-                <i class="fas fa-list"></i>
-                <span>Composez votre menu</span>
-            </div>
-
-            <div class="tuto__card">
-                <span>3</span>
-                <i class="fas fa-store"></i>
-                <span>Dégustez au restaurant</span>
-            </div>
+            <h2 class="tuto__title">Fonctionnement</h2> 
+            
+            <ol>
+                <li class="tuto__card">
+                    <i class="tuto__card__icon fas fa-mobile-alt"></i>
+                    <span>Choisissez un restaurant</span>
+                </li>
+                
+                <li class="tuto__card">
+                    <i class="tuto__card__icon fas fa-list"></i>
+                    <span>Composez votre menu</span>
+                </li>
+                
+                <li class="tuto__card">
+                    <i class="tuto__card__icon fas fa-store"></i>
+                    <span>Dégustez au restaurant</span>
+                </li>
+            </ol>
         </section>
     
 <!--============ RESTAURANTS ============-->
         <section class="restaurants">
-            <header class="restaurants__header">
-                <h2>Restaurants</h2>
-            </header>
+
+            <h2 class="restaurants__title">Restaurants</h2>
 
             <figure class="restaurants__card">
                 <a href="html/page_la_palette_du_gout.html">
-                    <img src="images/restaurants/la_palette_du_gout.jpg" alt="Photo du restaurant La palette du goût">
+                    <img class="restaurants__card__img" src="images/restaurants/la_palette_du_gout.jpg" alt="Photo du restaurant La palette du goût">
                     <p>Nouveau</p>
                     <figcaption>
                         <h3>La palette du goût</h3>
@@ -93,33 +88,39 @@
             </figure>
 
             <figure class="restaurants__card">
-                
-                <img src="images/restaurants/la_note_enchantee.jpg" alt="Photo du restaurant La note enchantée">
-                <p>Nouveau</p>
-                <figcaption>
-                    <h3>La note enchantée</h3>
-                    <p>Charonne</p>   
-                    <i class="far fa-heart"></i>
-                </figcaption>
+                <a href="html/page_la_note_enchantee.html">
+                    <img class="restaurants__card__img" src="images/restaurants/la_note_enchantee.jpg" alt="Photo du restaurant La note enchantée">
+                    <p>Nouveau</p>
+                    <figcaption>
+                        <h3>La note enchantée</h3>
+                        <p>Charonne</p>   
+                        <i class="far fa-heart"></i>
+                    </figcaption>
+                </a>
             </figure>
 
             <figure class="restaurants__card">
-                <img src="images/restaurants/a_la_francaise.jpg" alt="Photo du restaurant À la française">
-                <figcaption>
-                    <h3>À la française</h3>
-                    <p>Cité rouge</p>  
-                    <i class="far fa-heart"></i>
-                </figcaption>
+                <a href="html/page_a_la_francaise.html">
+                    <img class="restaurants__card__img" src="images/restaurants/a_la_francaise.jpg" alt="Photo du restaurant À la française">
+                    <figcaption>
+                        <h3>À la française</h3>
+                        <p>Cité rouge</p>  
+                        <i class="far fa-heart"></i>
+                    </figcaption>
+                </a>
             </figure>
 
             <figure class="restaurants__card">
-                <img src="images/restaurants/le_delice_des_sens.jpg" alt="Photo du restaurant Le délice des sens">
-                <figcaption>
-                    <h3>Le délice des sens</h3>
-                    <span>Folie-Méricourt</span>
-                    <i class="far fa-heart"></i>
-                </figcaption>
+                <a href="html/page_le_delice_des_sens.html">
+                    <img class="restaurants__card__img" src="images/restaurants/le_delice_des_sens.jpg" alt="Photo du restaurant Le délice des sens">
+                    <figcaption>
+                        <h3>Le délice des sens</h3>
+                        <span>Folie-Méricourt</span>
+                        <i class="far fa-heart"></i>
+                    </figcaption>
+                </a>
             </figure>
+
         </section>
     
 <!--============ FOOTER ============-->
