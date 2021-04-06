@@ -1,6 +1,7 @@
 @import "./Utils/variables";
 @import "./Utils/mixins";
 @import "./Base/fonts-all";
+@import "./Pages/resto_page";
 
 // =========INDEX=========
 // HEADER
@@ -10,7 +11,6 @@
 // RESTAURANTS
 // FOOTER
 
-// =========PAGE=========
 
 
 // -----------HEADER-----------
@@ -57,7 +57,7 @@
         }
         &__card{
             background-color: #f6f6f6;
-            box-shadow: 2px 2px 5px $shadow-color;
+            @include shadow;
             border-radius: 10px 10px 10px 10px;
             padding-top: 25px;
             padding-bottom: 25px;
@@ -83,7 +83,7 @@
     height: 250px;
     margin-bottom: 20px;
     border-radius: 10px;
-    box-shadow: 2px 2px 5px $shadow-color;
+    @include shadow;
     &__img{
         display: block;
         height: 175px;

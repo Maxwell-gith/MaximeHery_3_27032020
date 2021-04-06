@@ -37,8 +37,9 @@ a{
     background-image: linear-gradient($secondary-color, $primary-color);
     color: white;
     border-radius: 30px;
-    box-shadow: 2px 2px 5px $shadow-color;
+    @include shadow;
     padding: 15px 20px;
+    font-weight: bold;
 }
 
 .heart{
