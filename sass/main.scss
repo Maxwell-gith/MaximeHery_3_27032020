@@ -91,8 +91,30 @@
         object-fit: cover;
         border-radius: 10px 10px 0 0;
     }
+    &__txt{
+        padding: 20px 15px 20px 15px;
+        display: flex;
+        justify-content: space-between;
+    }
   }  
 }
 
-
 // -----------FOOTER-----------
+.footer{
+    background-color: #353535;
+    padding: 25px;
+    &__logo{
+        font-size: 16px;
+        font-family: 'Shrikhand', sans-serif;
+        color: white;
+        margin-bottom: 25px;
+    }
+    &__txt{
+        color: white;
+    }
+    &__list{
+        margin-bottom: 10px;
+    }
+}
+
+
