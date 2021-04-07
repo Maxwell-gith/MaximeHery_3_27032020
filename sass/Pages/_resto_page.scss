@@ -17,8 +17,9 @@
 }
 
 .pr_img{
-    height: 250px;
+    max-height: 250px;
     width: 100%;
+    object-fit: cover;
 }
 
 //MAIN
@@ -55,3 +56,4 @@
         @include shadow;
     }
 }
+
