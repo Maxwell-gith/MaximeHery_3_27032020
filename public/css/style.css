@@ -17,6 +17,7 @@ h2 {
 
 img {
   max-width: 100%;
+  padding: 0;
 }
 
 ul {
@@ -68,6 +69,7 @@ h2 {
 
 img {
   max-width: 100%;
+  padding: 0;
 }
 
 ul {
@@ -142,14 +144,62 @@ a {
   margin-bottom: 25px;
 }
 .dishes__card {
+  height: 70px;
+  width: 350px;
   background-color: white;
-  padding: 15px 10px;
   display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
+  align-items: center;
   border-radius: 10px;
   margin-bottom: 15px;
+  overflow: hidden;
   box-shadow: 2px 2px 5px #c4c3c0;
+  transition: all 0.5s;
+}
+.dishes__card__content {
+  display: flex;
+  justify-content: space-between;
+}
+.dishes__card__content__txt {
+  margin-left: 10px;
+}
+.dishes__card__check {
+  height: 70px;
+  width: 60px;
+  background-color: #99E2D0;
+  margin-left: 25px;
+  margin-right: -60px;
+  border-radius: 0 10px 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.dishes__card:hover :nth-child(3) {
+  margin-right: 60px;
+}
+
+.div1 {
+  width: 500px;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.bleu, .jaune, .rouge {
+  height: 100%;
+}
+
+.bleu {
+  width: 33%;
+  background-color: blue;
+}
+
+.rouge {
+  width: 33%;
+  background-color: red;
+}
+
+.jaune {
+  background-color: yellow;
 }
 
 .mainheader {
@@ -253,7 +303,7 @@ a {
   padding: 25px;
 }
 .footer__logo {
-  font-size: 16px;
+  font-size: 24px;
   font-family: "Shrikhand", sans-serif;
   color: white;
   margin-bottom: 25px;
@@ -263,49 +313,6 @@ a {
 }
 .footer__list {
   margin-bottom: 10px;
-}
-
-@media screen and (min-width: 750px) {
-  .container {
-    width: 75%;
-    margin: auto;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .container {
-    display: flex;
-    justify-content: space-between;
-    margin: 0;
-    width: 100%;
-  }
-  .container__card {
-    width: 49%;
-  }
-
-  .dishes {
-    width: 25%;
-  }
-
-  .pr_main {
-    width: 80%;
-    justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-@media screen and (min-width: 1920px) {
-  .container {
-    max-width: 75%;
-    margin: auto;
-  }
-
-  h2 {
-    text-align: center;
-  }
-
-  .footer__logo {
-    text-align: center;
-  }
 }
 
 /*# sourceMappingURL=style.css.map */

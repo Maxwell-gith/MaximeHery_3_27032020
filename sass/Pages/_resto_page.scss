@@ -46,14 +46,67 @@
         margin-bottom: 25px;
     }
     &__card{
+        height: 70px;
+        width: 350px;
         background-color: white;
-        padding: 15px 10px;
         display: flex;
-        justify-content: space-between;
-        align-items: flex-end;
+        align-items: center;
         border-radius: 10px;
         margin-bottom: 15px;
+        overflow: hidden;
         @include shadow;
+        transition: all .5s;
+        &__content{
+            display: flex;
+            justify-content: space-between;
+            &__txt{
+                margin-left: 10px;
+            }
+            &__price{
+                
+            }
+        }
+        &__check{
+            height: 70px;
+            width: 60px;
+            background-color: $tertiary-color;
+            margin-left: 25px;
+            margin-right: -60px;
+            border-radius: 0 10px 10px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        &:hover :nth-child(3) {
+            margin-right: 60px;
+        }
     }
+}
+
+
+.div1{
+    width: 500px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bleu, .jaune, .rouge{
+
+    height: 100%;
+}
+
+.bleu{
+    width: 33%;
+    background-color: blue;
+}
+
+.rouge{
+    width: 33%;
+    background-color: red;
+}
+
+.jaune{
+    background-color: yellow;
 }
 

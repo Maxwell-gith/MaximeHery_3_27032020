@@ -120,7 +120,7 @@
     background-color: #353535;
     padding: 25px;
     &__logo{
-        font-size: 16px;
+        font-size: 24px;
         font-family: 'Shrikhand', sans-serif;
         color: white;
         margin-bottom: 25px;
@@ -133,52 +133,66 @@
     }
 }
 
-@media screen and (min-width: 750px) {
-    .container{
-        width: 75%;
-        margin: auto;
-    }
+// @media screen and (min-width: 750px) {
+//     .container{
+//         width: 75%;
+//         margin: auto;
+//     }
+//     h2{
+//         width: 75%;
+//         margin: auto; 
+//     }
+
+//     .footer__logo{
+//         width: 75%;
+//         margin: auto;   
+//     }
     
-}
+// }
 
-@media screen and (min-width: 1024px) {
-    .container{
-        display: flex;
-        justify-content: space-between;
-        margin: 0;
-        width: 100%;
-        &__card{
-            width: 49%;
-        }
-    }
+// @media screen and (min-width: 1024px) {
+//     .container{
+//         display: flex;
+//         justify-content: space-around;
+//         margin: 0;
+//         width: 100%;
+//         &__card{
+//             width: 49%;
+//         }
+//     }
 
-    .dishes{
-        width: 25%;
-    }
+//     h2, .footer__logo{
+//         width: 100%;
+//         margin: 0;
+//     }
 
-    .pr_main{
-        width: 80%;
-        justify-content: center;
-        margin-left: auto;
-        margin-right: auto;
+//     .dishes{
+//         width: 25%;
+//     }
 
-    }
+//     .pr_main{
+//         width: 80%;
+//         justify-content: center;
+//         margin-left: auto;
+//         margin-right: auto;
+
+//     }
     
-}
+// }
 
-@media screen and (min-width: 1920px){
-    .container{
-        max-width: 75%;
-        margin: auto;
-    }
+// @media screen and (min-width: 1920px){
+//     .container{
+//         max-width: 75%;
+//         margin: auto;
+//     }
 
-    h2{
-        text-align: center;
-    }
+//     h2{
+//         text-align: center;
+//     }
 
-    .footer__logo{
-        text-align: center;
-    }
+//     .footer__logo{
+//         text-align: center;
+//     }
 
-}
+// }
 
