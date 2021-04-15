@@ -1,6 +1,7 @@
-@import "../Utils/variables";
-@import "../Utils/mixins";
-@import "../Base/fonts-all";
+
+@import "../Utils/variables", "../Utils/mixins", "../Utils/animations"; 
+@import "../Base/typography", "../Base/reset";
+@import "../Components/btn", "../Components/heart";
 
 // =========INDEX=========
 // HEADER
@@ -62,7 +63,7 @@
         &__price{
             width: 49%;
             display: flex;
-            justify-content: end;
+            justify-content: flex-end;
         }
         &__check{
             height: 70px;

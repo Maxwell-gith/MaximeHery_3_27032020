@@ -9,6 +9,9 @@ h2 {
 
 * {
   font-family: "Roboto", sans-serif;
+}
+
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -51,6 +54,12 @@ a {
 
 .heart {
   font-size: 20px;
+}
+.heart:hover {
+  display: inline-block;
+  font-weight: bold;
+  background-clip: content-box;
+  background: moz-linear-gradient(#FF79DA, #9356DC);
 }
 
 h1 {
@@ -64,6 +73,9 @@ h2 {
 
 * {
   font-family: "Roboto", sans-serif;
+}
+
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -106,6 +118,12 @@ a {
 
 .heart {
   font-size: 20px;
+}
+.heart:hover {
+  display: inline-block;
+  font-weight: bold;
+  background-clip: content-box;
+  background: moz-linear-gradient(#FF79DA, #9356DC);
 }
 
 .pr_header {
@@ -167,7 +185,7 @@ a {
 .dishes__card__price {
   width: 49%;
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
 }
 .dishes__card__check {
   height: 70px;

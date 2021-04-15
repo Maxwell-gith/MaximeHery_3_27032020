@@ -1,7 +1,9 @@
-@import "./Utils/variables";
-@import "./Utils/mixins";
-@import "./Base/fonts-all";
+
+@import "./Utils/variables", "./Utils/mixins", "./Utils/animations"; 
+@import "./Base/typography", "./Base/reset";
+@import "./Components/btn", "./Components/heart";
 @import "./Pages/resto_page";
+
 
 // =========INDEX=========
 // HEADER

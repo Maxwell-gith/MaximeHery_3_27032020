@@ -1,0 +1,11 @@
+
+.heart{
+    font-size: 20px;
+    &:hover{
+        display: inline-block;
+        font-weight: bold;
+        background-clip: content-box;
+        background: moz-linear-gradient($secondary-color, $primary-color);
+    }
+
+}
