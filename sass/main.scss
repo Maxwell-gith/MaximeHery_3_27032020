@@ -6,6 +6,7 @@
 
 
 // =========INDEX=========
+// LOADER
 // HEADER
 // LOCALISATION
 // EXPLORER
@@ -13,6 +14,46 @@
 // RESTAURANTS
 // FOOTER
 
+
+// -----------LOADER-----------
+.loader{
+    width: 100%;
+    height: 100%;
+    background-color: $shadow-color;
+    position: absolute;
+    z-index: 1;
+    opacity: 0.7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &__circle{
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        margin-right: 50px;
+        display: inline-block;
+        animation: boing 2s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+        &--1{
+            background-color: $primary-color;
+            animation-delay: 0;
+        }
+        &--2{
+            background-color: $secondary-color;
+            animation-delay: 0.2s;
+        }
+        &--3{
+            background-color: $tertiary-color;
+            animation-delay: 0.4s;
+        }
+    }
+    &__end{
+        opacity: 0;
+        transition: opacity 8s ease-out;
+    }
+    
+}
 
 
 // -----------HEADER-----------

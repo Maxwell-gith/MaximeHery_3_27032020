@@ -45,6 +45,17 @@
     padding-bottom: 40px;
     &__header{
         margin-bottom: 25px;
+        ::after{
+            content: "";
+            display: block;
+            margin-top: 5px;
+            width: 40px;
+            height: 3px;
+            background-color: $tertiary-color;
+            animation: progress 1s;
+            animation-fill-mode: both;
+            transform: scale(0);
+        }
     }
     &__card{
         height: 70px;
@@ -57,6 +68,10 @@
         margin-bottom: 15px;
         overflow: hidden;
         @include shadow;
+        animation: appear 0.5s;
+        animation-timing-function: cubic-bezier(.57,-0.3,.36,1.2);
+        transform: scale(0);
+        animation-fill-mode: both;
         &__txt{
             width: 49%;
         }
@@ -98,31 +113,18 @@
 
 }
 
-
-
-.div1{
-    width: 500px;
-    height: 100px;
-    display: flex;
-    justify-content: space-between;
+.delay1{
+    animation-delay: 0s;
 }
 
-.bleu, .jaune, .rouge{
-
-    height: 100%;
+.delay2{
+    animation-delay: 0.3s;
 }
 
-.bleu{
-    width: 33%;
-    background-color: blue;
+.delay3{
+    animation-delay: 0.6s;
 }
 
-.rouge{
-    width: 33%;
-    background-color: red;
+.delay4{
+    animation-delay: 0.9s;
 }
-
-.jaune{
-    background-color: yellow;
-}
-
