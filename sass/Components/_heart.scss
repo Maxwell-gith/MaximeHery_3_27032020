@@ -1,11 +1,13 @@
 
 .heart{
     font-size: 20px;
+    color: grey;
     &:hover{
-        display: inline-block;
+        animation: fill 1s ease-out;
+        background: linear-gradient($secondary-color, $primary-color);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
         font-weight: bold;
-        background-clip: content-box;
-        background: moz-linear-gradient($secondary-color, $primary-color);
     }
 
 }

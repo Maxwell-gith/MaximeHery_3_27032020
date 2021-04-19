@@ -52,7 +52,7 @@
             width: 40px;
             height: 3px;
             background-color: $tertiary-color;
-            animation: progress 1s;
+            animation: progress 2s;
             animation-fill-mode: both;
             transform: scale(0);
         }
@@ -73,16 +73,17 @@
         transform: scale(0);
         animation-fill-mode: both;
         &__txt{
-            width: 49%;
+            width: 80%;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
         &__price{
-            width: 49%;
-            display: flex;
-            justify-content: flex-end;
+            margin-left: 15px;
         }
         &__check{
             height: 70px;
-            width: 60px;
+            width: 65px;
             background-color: $tertiary-color;
             margin-left: 25px;
             margin-right: -60px;
@@ -108,9 +109,7 @@
     font-size: 20px;
     opacity: 0;
     transform: rotate(0deg);
-    transition: all 1s ease-in-out;
-
-
+    transition: all 0.7s ease-in-out;
 }
 
 .delay1{
@@ -128,3 +127,4 @@
 .delay4{
     animation-delay: 0.9s;
 }
+

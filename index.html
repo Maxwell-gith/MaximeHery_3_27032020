@@ -7,12 +7,13 @@
     <script src="https://kit.fontawesome.com/25cbbca222.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Shrikhand&display=swap" rel="stylesheet"> 
-    <link href="public\css/style.css" rel="stylesheet">
+    <link href="public/css/style.css" rel="stylesheet">
     <title>Oh My Food</title>
 </head>
 
 <!-- LOADER -->
 <!-- HEADER -->
+<!-- MAIN -->
 <!-- LOCALISATION -->
 <!-- EXPLORER -->
 <!-- FONCTIONNEMENT -->
@@ -28,32 +29,30 @@
     </div>
     <!--============ HEADER ============-->    
     <header class="mainheader" id="home">
-        <a href="#home">
-            <h1 class="mainheader__logo">ohmyfood</h1>
-        </a>   
-        
+        <h1 class="mainheader__logo">ohmyfood</h1>   
     </header>
-    
-    <!--============ LOCALISATION ============-->
-    <section class="localisation">
-        <i class="fas fa-map-marker-alt localisation__icon"></i>
-        <span class="localisation__text">Paris, belleville</span>
-        
-    </section>
-    
-    <!--============ EXPLORER ============-->
-    <section class="explorer">
-        <h2 class="explorer__title">Réservez le menu qui <br> vous convient</h2>
-        
-        <p class="explorer__parag">
-            Découvrez des restaurants d'exception, sélectionnés par nos soins
-        </p>
-        
-        <a  class="btn" href="">Explorer nos restaurants</a>
-        
-    </section>
-    
+  
+<!--============ MAIN ============-->    
     <main>
+<!--============ LOCALISATION ============-->
+        <section class="localisation">
+            <i class="fas fa-map-marker-alt localisation__icon"></i>
+            <span class="localisation__text">Paris, belleville</span>
+            
+        </section>
+        
+<!--============ EXPLORER ============-->
+        <section class="explorer">
+            <h2 class="explorer__title">Réservez le menu qui <br> vous convient</h2>
+            
+            <p class="explorer__parag">
+                Découvrez des restaurants d'exception, sélectionnés par nos soins
+            </p>
+            
+            <a  class="btn" href="">Explorer nos restaurants</a>
+            
+        </section>
+    
 <!--============ TUTO ============-->
         <section class="tuto">
 
@@ -93,8 +92,8 @@
             <h2 class="restaurants__title">Restaurants</h2>
             <div class="container">
                 <div class="container__card">
-                    <figure class="restaurants__card">
-                        <a href="html/page_la_palette_du_gout.html">
+                    <a href="html/page_resto_vierge.html">
+                        <figure class="restaurants__card">
                             <img class="restaurants__card__img" src="images/restaurants/la_palette_du_gout.jpg" alt="Photo du restaurant La palette du goût">
                             <figcaption class="restaurants__card__txt">
                                 <div>
@@ -105,11 +104,11 @@
                                     <i class="heart far fa-heart"></i>
                                 </div>
                             </figcaption>
-                        </a>
-                    </figure>
+                        </figure>
+                    </a>
         
-                    <figure class="restaurants__card">
-                        <a href="html/page_la_note_enchantee.html">
+                    <a href="html/page_resto_vierge.html">
+                        <figure class="restaurants__card">
                             <img class="restaurants__card__img" src="images/restaurants/la_note_enchantee.jpg" alt="Photo du restaurant La note enchantée">
                             <figcaption class="restaurants__card__txt">
                                 <div>
@@ -120,13 +119,13 @@
                                     <i class="heart far fa-heart"></i>
                                 </div>
                             </figcaption>
-                        </a>
-                    </figure>
+                        </figure>
+                    </a>
                 </div>
 
                 <div class="container__card">
-                    <figure class="restaurants__card">
-                        <a href="html/page_a_la_francaise.html">
+                    <a href="html/page_resto_vierge.html">
+                        <figure class="restaurants__card">
                             <img class="restaurants__card__img" src="images/restaurants/a_la_francaise.jpg" alt="Photo du restaurant À la française">
                             <figcaption class="restaurants__card__txt">
                                 <div>
@@ -137,11 +136,11 @@
                                     <i class="heart far fa-heart"></i>
                                 </div>
                             </figcaption>
-                        </a>
-                    </figure>
+                        </figure>
+                    </a>
         
-                    <figure class="restaurants__card">
-                        <a href="html/page_le_delice_des_sens.html">
+                    <a href="html/page_resto_vierge.html">
+                        <figure class="restaurants__card">
                             <img class="restaurants__card__img" src="images/restaurants/le_delice_des_sens.jpg" alt="Photo du restaurant Le délice des sens">
                             <figcaption class="restaurants__card__txt">
                                 <div>
@@ -152,8 +151,8 @@
                                     <i class="heart far fa-heart"></i>
                                 </div>
                             </figcaption>
-                        </a>
-                    </figure>
+                        </figure>
+                    </a>
                 </div>
             </div>
 
@@ -164,15 +163,15 @@
 <!--============ FOOTER ============-->
         <footer class="footer">
             
-            <a href="#acceuil"><h3 class="footer__logo">ohmyfood</h3></a>
+            <a href="#home"><h3 class="footer__logo">ohmyfood</h3></a>
             
-            <ul class="container">
+            <ul>
                 <li class="footer__list">
-                    <a class="footer__txt" href=""><i class="fas fa-utensils"></i>Proposer un restaurant</a>
+                    <a class="footer__txt" href=""><i class="footer__icons fas fa-utensils"></i>Proposer un restaurant</a>
                 </li>
 
                 <li class="footer__list">
-                    <a class="footer__txt" href=""><i class="fas fa-hands-helping"></i>Devenir partenaire</a>
+                    <a class="footer__txt" href=""><i class="footer__icons fas fa-hands-helping"></i>Devenir partenaire</a>
                 </li>
 
                 <li class="footer__list">
@@ -184,6 +183,5 @@
                 </li>
             </ul>
         </footer>
-
 </body>
 </html>
