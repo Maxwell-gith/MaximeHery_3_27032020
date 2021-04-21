@@ -1,7 +1,7 @@
 
 @import "./Utils/variables", "./Utils/mixins", "./Utils/animations"; 
 @import "./Base/typography", "./Base/reset";
-@import "./Components/btn", "./Components/heart";
+@import "./Components/btn", "./Components/heart", "./Components/badge_new";
 @import "./Pages/resto_page";
 
 
@@ -138,6 +138,7 @@
     margin-bottom: 30px;
   }
   &__card{
+      position: relative;
     height: 250px;
     margin-bottom: 20px;
     border-radius: 10px;

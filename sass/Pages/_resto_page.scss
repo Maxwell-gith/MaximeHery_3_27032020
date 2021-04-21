@@ -73,20 +73,26 @@
         transform: scale(0);
         animation-fill-mode: both;
         &__txt{
-            width: 80%;
+            width: 90%;
             white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
+            &--over{
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
         }
         &__price{
-            margin-left: 15px;
+            margin-left: 10px;
         }
         &__check{
             height: 70px;
-            width: 65px;
+            width: 60px;
+            opacity: 0;
             background-color: $tertiary-color;
             margin-left: 25px;
-            margin-right: -60px;
+            margin-right: -70px;
             border-radius: 0 10px 10px 0;
             display: flex;
             align-items: center;
@@ -94,6 +100,7 @@
             transition: all 0.7s ease-in-out;
         }
         &:hover :nth-child(3) {
+            opacity: 1;
             margin-right: 0px;
         }
         &:hover .check_icons{

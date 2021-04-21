@@ -120,6 +120,20 @@ a {
   font-weight: bold;
 }
 
+.badge_new {
+  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  width: 80px;
+  background-color: #99E2D0;
+  color: #008766;
+  position: absolute;
+  right: 10px;
+  top: 15px;
+}
+
 @keyframes appear {
   0% {
     transform: scale(0);
@@ -311,20 +325,26 @@ a {
   animation-fill-mode: both;
 }
 .dishes__card__txt {
-  width: 80%;
+  width: 90%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.dishes__card__txt--over {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 .dishes__card__price {
-  margin-left: 15px;
+  margin-left: 10px;
 }
 .dishes__card__check {
   height: 70px;
-  width: 65px;
+  width: 60px;
+  opacity: 0;
   background-color: #99E2D0;
   margin-left: 25px;
-  margin-right: -60px;
+  margin-right: -70px;
   border-radius: 0 10px 10px 0;
   display: flex;
   align-items: center;
@@ -332,6 +352,7 @@ a {
   transition: all 0.7s ease-in-out;
 }
 .dishes__card:hover :nth-child(3) {
+  opacity: 1;
   margin-right: 0px;
 }
 .dishes__card:hover .check_icons {
@@ -479,6 +500,7 @@ a {
   margin-bottom: 30px;
 }
 .restaurants__card {
+  position: relative;
   height: 250px;
   margin-bottom: 20px;
   border-radius: 10px;
