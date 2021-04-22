@@ -115,7 +115,7 @@ a {
 .heart:hover {
   animation: fill 1s ease-out;
   background: linear-gradient(#FF79DA, #9356DC);
-  background-clip: text;
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: bold;
 }
@@ -251,7 +251,7 @@ a {
 .heart:hover {
   animation: fill 1s ease-out;
   background: linear-gradient(#FF79DA, #9356DC);
-  background-clip: text;
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: bold;
 }
@@ -369,7 +369,7 @@ a {
 }
 
 .delay1 {
-  animation-delay: 0s;
+  animation-delay: 0.1s;
 }
 
 .delay2 {
@@ -411,7 +411,7 @@ a {
 }
 .loader__circle--1 {
   background-color: #9356DC;
-  animation-delay: 0;
+  animation-delay: 0.1s;
 }
 .loader__circle--2 {
   background-color: #FF79DA;
@@ -440,6 +440,9 @@ a {
 }
 .localisation__icon {
   margin-right: 15px;
+}
+.localisation__text {
+  display: inline-block;
 }
 
 .explorer {
