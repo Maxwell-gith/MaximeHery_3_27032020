@@ -1,7 +1,7 @@
 
 @import "./Utils/variables", "./Utils/mixins", "./Utils/animations"; 
 @import "./Base/typography", "./Base/reset";
-@import "./Components/btn", "./Components/heart", "./Components/badge_new";
+@import "./Components/btn", "./Components/heart", "./Components/badge_new", "./Components/_check_icons";
 @import "./Pages/resto_page";
 
 
@@ -10,7 +10,7 @@
 // HEADER
 // LOCALISATION
 // EXPLORER
-// FONCTIONNEMENT
+// TUTO
 // RESTAURANTS
 // FOOTER
 
@@ -128,6 +128,9 @@
             }
             &:hover{
                 background-color: lighten($primary-color, $amount: 35%);
+            }
+            &:hover :nth-child(2){
+                color: $primary-color;
             }   
         }
 
